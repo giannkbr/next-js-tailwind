@@ -35,7 +35,7 @@ const ThemeWatcher = () => {
   return null;
 };
 
-export const AppContext = createContext<{ previousPathname?: string }>({});
+export const AppContext = createContext<{ previousPathname?: string | null}>({});
 
 export const Providers = ({ children }: { children: React.ReactNode }) => {
   let pathname = usePathname();
