@@ -69,7 +69,6 @@ const DesktopNavigation = (props : React.ComponentPropsWithRef<"nav">) => {
           <NavItem href="/about">About</NavItem>
           <NavItem href="/articles">Articles</NavItem>
           <NavItem href="/projects">Projects</NavItem>
-          <NavItem href="/speaking">Speaking</NavItem>
           <NavItem href="/uses">Uses</NavItem>
       </ul>
     </nav>
@@ -143,11 +142,10 @@ const MobileNavigation = (
                 <MobileNavItem href="/about">About</MobileNavItem>
                 <MobileNavItem href="/articles">Articles</MobileNavItem>
                 <MobileNavItem href="/projects">Projects</MobileNavItem>
-                <MobileNavItem href="/speaking">Speaking</MobileNavItem>
                 <MobileNavItem href="/uses">Uses</MobileNavItem>
               </ul>
               <button className="text-teal-500 w-full py-2 rounded-md dark:bg-black text-sm uppercase border border-teal-800 hover:text-teal-600 dark:hover:text-teal-200 hover:border-teal-700 duration-300 mt-6">
-                Login
+                Download CV
               </button>
             </nav>
           </Popover.Panel>
@@ -161,7 +159,7 @@ const MobileNavigation = (
 const Header = () => {
   return <header className='top-0 mb-3 py-5 w-full mx-auto px-4 md:px-10 flex gap-10 justify-between items-center'>
     <Link href={'/'}>
-     <Image src={profile} alt='Profile Logo' className='w-12 h-12 rounded-full object-cover' />
+     <Image src={profile} alt='Profile Logo' className='w-12 h-12 rounded-full object-cover border border-teal-700 hover:scale-150' />
     </Link>
     <div>
       {/* desktop navigation */}
@@ -169,9 +167,11 @@ const Header = () => {
     </div>
 
     <div className="flex items-center gap-5">
+        <a href="https://www.youtube.com/watch?v=runK29FsY04&ab_channel=KudetTech">
         <button className="hidden md:inline-flex text-teal-500 px-8 py-2 rounded-full dark:bg-black text-sm uppercase border border-teal-800 hover:text-teal-800 dark:hover:text-teal-200 hover:border-teal-700 duration-300">
           Download CV
         </button>
+        </a>
         {/* MobileNavigation */}
         <MobileNavigation className="pointer-events-auto md:hidden" />
         <ThemeToggle />

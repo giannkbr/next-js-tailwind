@@ -20,7 +20,7 @@ const SimpleLayout = ({
           {intro}
         </p>
       </header>
-      {children && <div className="mt-16 sm:mt-20">{children}</div>}
+      {children && <div className="mt-8 sm:mt-12">{children}</div>}
     </Container>
   );
 };
