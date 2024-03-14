@@ -3,10 +3,6 @@ import { isValidHttpMethod, MethodNotAllowedEdge } from '@/lib/api';
 
 import { type NextRequest } from 'next/server';
 
-export const config = {
-  runtime: 'edge',
-};
-
 export async function GET(req: NextRequest) {
   if (!isValidHttpMethod(req.method, ['GET'])) {
     return MethodNotAllowedEdge();
