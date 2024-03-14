@@ -170,7 +170,7 @@ const Header = () => {
 
     <div className="flex items-center gap-5">
         <button className="hidden md:inline-flex text-teal-500 px-8 py-2 rounded-full dark:bg-black text-sm uppercase border border-teal-800 hover:text-teal-800 dark:hover:text-teal-200 hover:border-teal-700 duration-300">
-          Login
+          Download CV
         </button>
         {/* MobileNavigation */}
         <MobileNavigation className="pointer-events-auto md:hidden" />

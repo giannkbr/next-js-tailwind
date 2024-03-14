@@ -1,5 +1,6 @@
 import React from "react";
 import Container from "./Container";
+import { FaGithub, FaLinkedinIn, FaTwitter } from "react-icons/fa";
 
 const Hero = () => {
   return (
@@ -15,14 +16,14 @@ const Hero = () => {
           nobis. Aut, alias?.
         </p>
         <div className="flex mt-6">
-          <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
-            <img src="linkedin-logo.png" alt="LinkedIn" className="w-6 h-6 mr-4" />
+          <a href="https://www.linkedin.com/in/giannkbr" target="_blank" rel="noopener noreferrer">
+            <FaLinkedinIn className="w-6 h-6 mr-4 hover:scale-110 " />
           </a>
-          <a href="https://www.twitter.com/" target="_blank" rel="noopener noreferrer">
-            <img src="twitter-logo.png" alt="Twitter" className="w-6 h-6 mr-4" />
+          <a href="https://www.twitter.com/giankbrr" target="_blank" rel="noopener noreferrer">
+            <FaTwitter className="w-6 h-6 mr-4 hover:scale-110" />
           </a>
-          <a href="https://www.github.com/" target="_blank" rel="noopener noreferrer">
-            <img src="github-logo.png" alt="GitHub" className="w-6 h-6 mr-4" />
+          <a href="https://www.github.com/giannkbr" target="_blank" rel="noopener noreferrer">
+            <FaGithub className="w-6 h-6 hover:scale-110" />
           </a>
         </div>
       </div>
