@@ -1,7 +1,7 @@
 import React from 'react'
 import Header from './Header'
 import Footer from './Footer'
-import SmoothScroll from './SmoothScroll'
+
 
 const Layout = ({children} : {children:React.ReactNode}) => {
   return (
@@ -15,7 +15,7 @@ const Layout = ({children} : {children:React.ReactNode}) => {
 
     <div className='relative flex w-full flex-col max-w-7xl mx-auto'>
       <Header />
-      <SmoothScroll>{children}</SmoothScroll>
+      {children}
       <Footer />
     </div>
    </>

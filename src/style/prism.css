@@ -45,3 +45,13 @@ pre[class*="language-"] {
 .token.combinator {
   color: theme("colors.zinc.400");
 }
+
+.progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 10px;
+  background:theme("colors.teal.400");
+  transform-origin: 0%;
+}

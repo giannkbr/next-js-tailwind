@@ -1,14 +1,12 @@
 import { Card } from '@/components/Card'
 import Container from '@/components/Container'
 import Hero from '@/components/Hero'
-import Newsletter from '@/components/Newsletter'
 import Photos from '@/components/Photos'
 import Resume from '@/components/Resume'
 import { formatDate } from '@/lib/formateDate'
 import { ArticleWithSlug, getAllArticles } from "@/lib/article"
 import React from 'react'
 import NowPlaying from '@/components/NowPlaying'
-import ScrollToTopButton from '@/components/ScrollToTopPage'
 
 
 const Article = ({ article }: { article: ArticleWithSlug }) => {

@@ -7,6 +7,8 @@ import { AppContext } from "@/app/providers";
 import { BsArrowLeftCircle } from "react-icons/bs";
 import { formatDate } from "@/lib/formateDate";
 import { Prose } from "./Prose";
+import { motion, useScroll, useSpring } from "framer-motion";
+
 
 function ArrowLeftIcon(props: React.ComponentPropsWithoutRef<"svg">) {
   return (
@@ -30,10 +32,20 @@ const ArticleLayout = ({
 }) => {
   let router = useRouter();
   let { previousPathname } = useContext(AppContext);
+  
+  const { scrollYProgress } = useScroll();
+  const scaleX = useSpring(scrollYProgress, {
+    stiffness: 100,
+    damping: 30,
+    restDelta: 0.001
+  });
+
+
   return (
     <Container className="w-full">
       <div className="xl:relative">
         <div className="mx-auto max-w-2xl">
+          <motion.div className="progress-bar" style={{ scaleX }} />
           <article>
             {previousPathname && (
               <button
