@@ -80,6 +80,8 @@ function AnimatedBars() {
 export default function NowPlaying() {
   const { data } = useSWR<NowPlayingSong>('/api/now-playing', fetcher);
 
+  console.log(data);
+
   return (
     <div className="mb-8 flex w-full flex-row-reverse items-center space-x-0 sm:flex-row sm:space-x-2">
       {data?.songUrl ? (
